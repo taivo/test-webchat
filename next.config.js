@@ -25,15 +25,15 @@ function bundleAnalyzerSetup({ enabled = true, openAnalyzer = true, outputDir = 
           const reportDir = `${dotNextDir}${outputDir ? '../' + outputDir : 'analyze'}`
           const runtime = options.nextRuntime ?? 'client'
           const reportFilename = `${reportDir}/${runtime}.html`
-          const statsFilename = `${reportDir}/${runtime}-stats.json`
+          //const statsFilename = `${reportDir}/${runtime}-stats.json`
 
           config.plugins.push(
             new BundleAnalyzerPlugin({
               analyzerMode: 'static',
               openAnalyzer,
               reportFilename,
-              generateStatsFile: true,
-              statsFilename
+              //generateStatsFile: true,
+              //statsFilename
             })
           )
         }

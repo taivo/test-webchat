@@ -1,7 +1,8 @@
 "use client"
 
 import {useMemo} from 'react'
-import ReactWebChat, {createDirectLine} from 'botframework-webchat'
+import ReactWebChat, {createDirectLine } from 'botframework-webchat'
+import webchatStore from '@/store'
 
 export default function BotChat() {
    // NOTE: to get token directly from our site, see this
@@ -14,6 +15,8 @@ export default function BotChat() {
       token: directLineToken
     })
   }, [directLineToken])
+
+  console.log('webchatStore', webchatStore.getState())
 
   if(!directLineToken){
    return <div>Directline token not set</div>

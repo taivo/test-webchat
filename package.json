@@ -10,13 +10,14 @@
     "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
-    "@types/node": "^18.16.6",
+    "@types/node": "^20.1.1",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "autoprefixer": "^10.4.14",
     "botframework-webchat": "^4.15.7",
     "eslint": "^8.40.0",
     "eslint-config-next": "^13.4.1",
+    "madge": "^6.0.0",
     "next": "^13.4.1",
     "postcss": "^8.4.23",
     "react": "^18.2.0",
@@ -25,6 +26,7 @@
     "typescript": "^5.0.4"
   },
   "devDependencies": {
+    "arkit": "^1.6.4",
     "cross-env": "^7.0.3",
     "webpack-bundle-analyzer": "^4.8.0"
   }

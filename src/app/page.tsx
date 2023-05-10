@@ -1,7 +1,12 @@
-import BotChat from '@/components/BotChat'
+import dynamic from 'next/dynamic'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const BotChat = dynamic(() => import('@components/BotChat'), {
+  ssr: false,
+  loading: () => <p>Loading Chat Widget...</p>
+})
 
 export default function Home() {
   return (

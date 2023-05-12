@@ -1,7 +1,7 @@
 "use client"
 
 import {useMemo} from 'react'
-import ReactWebChat, {createDirectLine } from 'botframework-webchat'
+import ReactWebChat, {createDirectLine } from 'botframework-webchat-lite'
 import webchatStore from '@/store'
 
 export default function BotChat() {
